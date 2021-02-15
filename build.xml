@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
 <!-- A "project" describes a set of targets that may be requested
      when Ant is executed.  The "default" attribute defines the
      target which is executed if no specific target is requested,
@@ -193,9 +195,11 @@
           destdir="${build.home}/WEB-INF/classes"
             debug="${compile.debug}"
       deprecation="${compile.deprecation}"
-         optimize="${compile.optimize}">
+         optimize="${compile.optimize}"
+	encoding="iso-8859-1">
         <classpath refid="compile.classpath"/>
-    </javac>
+	    
+</javac>
   </target>
 
 <!-- ==================== Dist Target ===================================== -->
