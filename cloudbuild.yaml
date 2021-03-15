@@ -1,4 +1,7 @@
 steps:
+-   name: 'gcr.io/$PROJECT_ID/zip'
+    args: ['-r', 'fod-payload.zip', '*']
+
 -   name: 'gcr.io/$PROJECT_ID/fod-uploader'
-    args: ['-v']
+    args: ['-portalurl', 'https://ams.fotify.com/', '-apiurl', 'https://api.ams.fotify.com/', '-uc', 'AlexG', 'ZjBXWX5nQU1NMGtHc0E5XDtGZjZWeUF6TlQ0cHRQ0', '-tc', 'FranklinBank', '-z', 'fod-payload.zip', '-rid', '274581', '-ep', '2', '-pp', '0', '-I', '1', '-apf']
   
