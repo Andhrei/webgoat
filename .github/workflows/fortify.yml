@@ -34,7 +34,7 @@ jobs:
           sast-scan: true
         env:
           SSC_URL: ${{vars.FTFY_SSC_BASE_URL}}
-          #SSC_TOKEN: ${{secrets.FTFY_CI_TOKEN_DEC}}
+          SSC_TOKEN: ${{secrets.FTFY_CI_TOKEN_ENC}}
           SSC_USER: ${{secrets.FTFY_CI_USERNAME}}
           SSC_PASSWORD: ${{secrets.FTFY_CI_PASSWORD}}
           SC_SAST_TOKEN : ${{secrets.FTFY_SAST_CLIENT_TOKEN}}
