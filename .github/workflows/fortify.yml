@@ -41,7 +41,7 @@ jobs:
           SC_SAST_SENSOR_VERSION: 23.1
           # EXTRA_SC_SAST_LOGIN_OPTS: --socket-timeout=60s
           SSC_APPVERSION: WebGoat:${{ github.ref_name }}
-          EXTRA_PACKAGE_OPTS: -bt mvn -q
+          #EXTRA_PACKAGE_OPTS: -bt mvn -q
           DO_WAIT: true
           DO_EXPORT: true
 
