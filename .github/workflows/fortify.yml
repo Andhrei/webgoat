@@ -11,9 +11,7 @@ on:
 
 jobs:
   Fortif-SAST:
-    runs-on: self-hosted
-    container:
-      image: maven
+    runs-on: ubuntu-latest
     permissions: write-all
     env:
       APPLICATION: "${{ github.event.repository.name }}"
